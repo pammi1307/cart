@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Marmeto</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eQ~Ob1JfIzwztu98MeKCLhmFDsSaM5jYcgxP-Ly2Tr5OwtVarco-JLG09CZRJS3Eee~widDH5oBu4OSsPtHIBXXHT5Da5WK3~8pw70It-wNPaXbA3z89y1OWl-aRWqj7R1jh4e287I6kIxtmhxKF2Zo9mxw9aZLY6Gp4Kmrbnm2Gneb2BxfQxC7ptSZeJUh5RDV59-ptrsMitGTbiE5XhDw8Xls5P9r040aa8oRrVYD93cS9NlpSDQcPMnSym9P5M720gfKsgO4kLj8rnpsA~e1~iIYm0rOayKgsXxfMHTO-HATWs5i1wEYPH3MEPYRqwwFWLNaWZ33XutpZcDBKeA__" alt="Marmeto Logo">
+                <h3>Marmeto</h3>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="icon-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="cart-icon" class="header-icon">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="#">Home</a> > <span>Cart</span>
+        </div>
+    </div>
+
+    <!-- Cart Content Area -->
+    <main class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <!-- Left Column - Cart Items -->
+                <div class="cart-items">
+                    <h2>Shopping Cart</h2>
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="placeholder-sofa.jpg" alt="Asgaard sofa">
+                        </div>
+                        <div class="item-details">
+                            <h3>Asgaard sofa</h3>
+                            <div class="item-price">₹<span class="presentment-price">1,499.00</span></div>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <div class="item-subtotal">
+                                Subtotal: ₹<span>1,499.00</span>
+                            </div>
+                            <button class="remove-item"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Cart Totals -->
+                <div class="cart-summary">
+                    <h2>Cart Totals</h2>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span class="original-total-price">₹1,499.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Total:</span>
+                        <span class="total-price">₹1,499.00</span>
+                    </div>
+                    <button class="checkout-btn">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="service-highlights">
+                <div class="service-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>High Quality</h3>
+                    <p>crafted from top materials</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Warranty Protection</h3>
+                    <p>Over 2 years</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Order over ₹1500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24 / 7 Support</h3>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
